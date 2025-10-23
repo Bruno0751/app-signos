@@ -1,0 +1,37 @@
+@use './variables.scss' as var;
+* {
+    --bs-body-text-align: center;
+    text-align: var(--bs-body-text-align);
+}
+html, body {
+    --bs-body-bg: #c194ff;
+    padding: 0;
+    background-color: var(--bs-body-bg);
+    background-color: #c194ff !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    header, nav, footer {
+        width: 100%;
+    }
+}
+header, footer {
+    z-index: 1000;
+}
+header {
+    top: 0;
+    left: 0;
+    position: static;
+    display: flex;
+}
+section {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 9px;
+}
+footer {
+    position: fixed;
+    background-color: #353535;
+    padding: 10px 0;
+    bottom: var.$zero;
+    color: #ffffff;
+}
